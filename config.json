@@ -6,7 +6,10 @@
   },
   "inbound": {              
     "port": 12345,          
-    "protocol": "vmess",    
+    "protocol": "vmess",
+    "streamSettings": {
+    "network": "kcp" 
+     },
     "settings": {
       "clients": [
         {
@@ -20,7 +23,10 @@
   },
   "outbound": {            
     "protocol": "freedom",  
-    "settings": {}
+    "settings": {},
+    "streamSettings": {
+    "network": "kcp" 
+     }
   },
   "outboundDetour": [       
     {
